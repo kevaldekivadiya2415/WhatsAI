@@ -6,7 +6,7 @@ from app.utils.templates.whatsapp_default_messages import (
     DEFAULT_ERROR_MESSAGE,
     MEDIA_NOT_SUPPORT_MESSAGE,
 )
-from app.utils.whatsapp_message import WhatsAppMessages
+from app.utils.send_whatsapp_message import WhatsAppMessages
 
 # Load environment variables
 load_dotenv()

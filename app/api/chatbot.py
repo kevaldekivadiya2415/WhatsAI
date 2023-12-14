@@ -71,6 +71,12 @@ async def whatsapp_webhook_get(request: Request):
     tags=["WhatsApp Webhook"],
     summary="Handle WhatsApp Webhook (POST)",
     description="This endpoint handles WhatsApp webhook for POST requests.",
+    responses={
+        200: {"description": "Webhook response successfully received."},
+        400: {"description": "Bad Request: Invalid parameters."},
+        401: {"description": "Unauthorized: Authentication failed."},
+        500: {"description": "Internal Server Error: Something went wrong."},
+    },
 )
 async def whatsapp_webhook_post(request: Request):
     try:

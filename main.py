@@ -1,9 +1,6 @@
 from fastapi import FastAPI, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
 from app.api import chatbot
-from app.core import chatbot_logic
-from app.utils import whatsapp_helpers
 import uvicorn
 
 # Initialize the FastAPI application
